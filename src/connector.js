@@ -152,7 +152,11 @@ export async function runConnector({ daemon, slack, version, signal, log = nothi
       const task = (async () => {
         const result = await runCall({ slack, credentials, daemon }, command.call);
         await guard(() => daemon.commandResult(command.id, result));
-      })().finally(() => inflight.delete(task));
+      })()
+        .catch((error) => {
+          log('command.failed', { error: redact(error instanceof Error ? error.message : 'unknown', 200) });
+        })
+        .finally(() => inflight.delete(task));
       inflight.add(task);
     }
     await Promise.allSettled(inflight);
