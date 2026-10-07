@@ -1,0 +1,13 @@
+{
+  "contract": [
+    "contract"
+  ],
+  "daemon": [
+    "policy"
+  ],
+  "transport": [
+    "api",
+    "events",
+    "text"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@patrick-lai/commission-ai-slack",
+  "version": "0.1.0",
+  "description": "The Slack connector for CommissionAI: Socket Mode, the Slack Web API and file transfer, driven through the daemon's local connector API",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrick-lai/commission-ai-slack.git"
+  },
+  "homepage": "https://github.com/patrick-lai/commission-ai-slack",
+  "bugs": {
+    "url": "https://github.com/patrick-lai/commission-ai-slack/issues"
+  },
+  "keywords": [
+    "slack",
+    "socket-mode",
+    "commissionai",
+    "connector"
+  ],
+  "bin": {
+    "commission-ai-slack": "bin/commission-ai-slack"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

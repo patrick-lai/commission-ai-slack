@@ -1,0 +1,1332 @@
+{
+  "constants": {
+    "max_files": 10,
+    "max_text_chars": 20000
+  },
+  "parse_event": [
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a plain message",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": true,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "<@UBOT0001> it crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a message that mentions the bot",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "<@UBOT0001> it crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": true,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "an app mention",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "app_mention",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": "1712345000.000200",
+          "workspace": "T001"
+        }
+      },
+      "name": "a thread reply",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "thread_ts": "1712345000.000200",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a thread root",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "thread_ts": "1712345678.000100",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a thread timestamp of the wrong shape",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "thread_ts": "abc",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a message edit",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "subtype": "message_changed",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a message deletion",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "subtype": "message_deleted",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a join",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "subtype": "channel_join",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a bot message",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "subtype": "bot_message",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a message with a bot id",
+      "payload": {
+        "event": {
+          "bot_id": "B1",
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a message with a null bot id",
+      "payload": {
+        "event": {
+          "bot_id": null,
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "the bot's own message",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "UBOT0001"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "UBOT0001",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "the bot's own message when the bot is unknown",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "UBOT0001"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a reaction",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "reaction_added",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a forged channel",
+      "payload": {
+        "event": {
+          "channel": "C1:2",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a lowercase user",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "u123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a timestamp of the wrong shape",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678:000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a numeric timestamp",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": 1712345678,
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a file share",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "subtype": "file_share",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a thread broadcast",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "subtype": "thread_broadcast",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a missing user",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a missing channel",
+      "payload": {
+        "event": {
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a missing timestamp",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a missing text",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": null,
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a missing client message id",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a payload without an event",
+      "payload": {
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "an event that is not an object",
+      "payload": {
+        "event": "message"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a payload that is null",
+      "payload": null
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": null,
+      "name": "a payload that is a string",
+      "payload": "event"
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": null,
+        "keys": [
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T777"
+        }
+      },
+      "name": "a team on the event only",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "team": "T777",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        }
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": null,
+        "keys": [
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": ""
+        }
+      },
+      "name": "no team at all",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        }
+      }
+    },
+    {
+      "bot_user": "",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "<@UBOT0001> hi",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "a mention without a known bot",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "<@UBOT0001> hi",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "café 😀 <@U999|dana>",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "text with emoji and accents",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "text": "café 😀 <@U999|dana>",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [
+            {
+              "id": "F1",
+              "mime": "image/png",
+              "name": "shot.png",
+              "size": 1234,
+              "url": "https://files.slack.com/files-pri/T-F1/download/shot.png"
+            },
+            {
+              "id": "F2",
+              "mime": "image/png",
+              "name": "stub.png",
+              "size": 0,
+              "url": ""
+            },
+            {
+              "id": "F5",
+              "mime": "application/pdf",
+              "name": "Quarterly report",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F5/report.pdf"
+            },
+            {
+              "id": "F6",
+              "mime": "text/plain",
+              "name": "file",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F6/a.txt"
+            }
+          ],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "files with every stub shape",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "files": [
+            {
+              "id": "F1",
+              "mimetype": "image/png",
+              "name": "shot.png",
+              "size": 1234,
+              "url_private": "https://files.slack.com/files-pri/T-F1/shot.png",
+              "url_private_download": "https://files.slack.com/files-pri/T-F1/download/shot.png"
+            },
+            {
+              "file_access": "check_file_info",
+              "id": "F2",
+              "mimetype": "image/png",
+              "name": "stub.png"
+            },
+            {
+              "id": "F3",
+              "mode": "tombstone"
+            },
+            {
+              "file_access": "access_denied",
+              "id": "F4",
+              "mimetype": "image/png",
+              "name": "denied.png"
+            },
+            {
+              "id": "F5",
+              "mimetype": " application/pdf ",
+              "title": " Quarterly report ",
+              "url_private": " https://files.slack.com/files-pri/T-F5/report.pdf "
+            },
+            {
+              "id": "F6",
+              "mimetype": "text/plain",
+              "size": -5,
+              "url_private": "https://files.slack.com/files-pri/T-F6/a.txt",
+              "url_private_download": ""
+            },
+            {
+              "name": "no-id.png"
+            },
+            "not an object",
+            {
+              "id": 7
+            }
+          ],
+          "subtype": "file_share",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "files that are not a list",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "files": "F1",
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": {
+        "client_msg_id": "cm-1",
+        "event_id": "Ev1",
+        "keys": [
+          "event:Ev1",
+          "client:cm-1",
+          "ts:C0FEEDBK:1712345678.000100"
+        ],
+        "message": {
+          "conversation": "C0FEEDBK",
+          "files": [
+            {
+              "id": "F0",
+              "mime": "image/png",
+              "name": "f0.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F0/f.png"
+            },
+            {
+              "id": "F1",
+              "mime": "image/png",
+              "name": "f1.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F1/f.png"
+            },
+            {
+              "id": "F2",
+              "mime": "image/png",
+              "name": "f2.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F2/f.png"
+            },
+            {
+              "id": "F3",
+              "mime": "image/png",
+              "name": "f3.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F3/f.png"
+            },
+            {
+              "id": "F4",
+              "mime": "image/png",
+              "name": "f4.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F4/f.png"
+            },
+            {
+              "id": "F5",
+              "mime": "image/png",
+              "name": "f5.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F5/f.png"
+            },
+            {
+              "id": "F6",
+              "mime": "image/png",
+              "name": "f6.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F6/f.png"
+            },
+            {
+              "id": "F7",
+              "mime": "image/png",
+              "name": "f7.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F7/f.png"
+            },
+            {
+              "id": "F8",
+              "mime": "image/png",
+              "name": "f8.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F8/f.png"
+            },
+            {
+              "id": "F9",
+              "mime": "image/png",
+              "name": "f9.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F9/f.png"
+            },
+            {
+              "id": "F10",
+              "mime": "image/png",
+              "name": "f10.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F10/f.png"
+            },
+            {
+              "id": "F11",
+              "mime": "image/png",
+              "name": "f11.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F11/f.png"
+            },
+            {
+              "id": "F12",
+              "mime": "image/png",
+              "name": "f12.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F12/f.png"
+            },
+            {
+              "id": "F13",
+              "mime": "image/png",
+              "name": "f13.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F13/f.png"
+            },
+            {
+              "id": "F14",
+              "mime": "image/png",
+              "name": "f14.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F14/f.png"
+            },
+            {
+              "id": "F15",
+              "mime": "image/png",
+              "name": "f15.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F15/f.png"
+            },
+            {
+              "id": "F16",
+              "mime": "image/png",
+              "name": "f16.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F16/f.png"
+            },
+            {
+              "id": "F17",
+              "mime": "image/png",
+              "name": "f17.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F17/f.png"
+            },
+            {
+              "id": "F18",
+              "mime": "image/png",
+              "name": "f18.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F18/f.png"
+            },
+            {
+              "id": "F19",
+              "mime": "image/png",
+              "name": "f19.png",
+              "size": 0,
+              "url": "https://files.slack.com/files-pri/T-F19/f.png"
+            }
+          ],
+          "id": "1712345678.000100",
+          "mentioned": false,
+          "provider": "slack",
+          "sender_id": "U123",
+          "sender_name": null,
+          "text": "the export button crashes",
+          "thread": null,
+          "workspace": "T001"
+        }
+      },
+      "name": "more files than the cap",
+      "payload": {
+        "event": {
+          "channel": "C0FEEDBK",
+          "client_msg_id": "cm-1",
+          "files": [
+            {
+              "id": "F0",
+              "mimetype": "image/png",
+              "name": "f0.png",
+              "url_private": "https://files.slack.com/files-pri/T-F0/f.png"
+            },
+            {
+              "id": "F1",
+              "mimetype": "image/png",
+              "name": "f1.png",
+              "url_private": "https://files.slack.com/files-pri/T-F1/f.png"
+            },
+            {
+              "id": "F2",
+              "mimetype": "image/png",
+              "name": "f2.png",
+              "url_private": "https://files.slack.com/files-pri/T-F2/f.png"
+            },
+            {
+              "id": "F3",
+              "mimetype": "image/png",
+              "name": "f3.png",
+              "url_private": "https://files.slack.com/files-pri/T-F3/f.png"
+            },
+            {
+              "id": "F4",
+              "mimetype": "image/png",
+              "name": "f4.png",
+              "url_private": "https://files.slack.com/files-pri/T-F4/f.png"
+            },
+            {
+              "id": "F5",
+              "mimetype": "image/png",
+              "name": "f5.png",
+              "url_private": "https://files.slack.com/files-pri/T-F5/f.png"
+            },
+            {
+              "id": "F6",
+              "mimetype": "image/png",
+              "name": "f6.png",
+              "url_private": "https://files.slack.com/files-pri/T-F6/f.png"
+            },
+            {
+              "id": "F7",
+              "mimetype": "image/png",
+              "name": "f7.png",
+              "url_private": "https://files.slack.com/files-pri/T-F7/f.png"
+            },
+            {
+              "id": "F8",
+              "mimetype": "image/png",
+              "name": "f8.png",
+              "url_private": "https://files.slack.com/files-pri/T-F8/f.png"
+            },
+            {
+              "id": "F9",
+              "mimetype": "image/png",
+              "name": "f9.png",
+              "url_private": "https://files.slack.com/files-pri/T-F9/f.png"
+            },
+            {
+              "id": "F10",
+              "mimetype": "image/png",
+              "name": "f10.png",
+              "url_private": "https://files.slack.com/files-pri/T-F10/f.png"
+            },
+            {
+              "id": "F11",
+              "mimetype": "image/png",
+              "name": "f11.png",
+              "url_private": "https://files.slack.com/files-pri/T-F11/f.png"
+            },
+            {
+              "id": "F12",
+              "mimetype": "image/png",
+              "name": "f12.png",
+              "url_private": "https://files.slack.com/files-pri/T-F12/f.png"
+            },
+            {
+              "id": "F13",
+              "mimetype": "image/png",
+              "name": "f13.png",
+              "url_private": "https://files.slack.com/files-pri/T-F13/f.png"
+            },
+            {
+              "id": "F14",
+              "mimetype": "image/png",
+              "name": "f14.png",
+              "url_private": "https://files.slack.com/files-pri/T-F14/f.png"
+            },
+            {
+              "id": "F15",
+              "mimetype": "image/png",
+              "name": "f15.png",
+              "url_private": "https://files.slack.com/files-pri/T-F15/f.png"
+            },
+            {
+              "id": "F16",
+              "mimetype": "image/png",
+              "name": "f16.png",
+              "url_private": "https://files.slack.com/files-pri/T-F16/f.png"
+            },
+            {
+              "id": "F17",
+              "mimetype": "image/png",
+              "name": "f17.png",
+              "url_private": "https://files.slack.com/files-pri/T-F17/f.png"
+            },
+            {
+              "id": "F18",
+              "mimetype": "image/png",
+              "name": "f18.png",
+              "url_private": "https://files.slack.com/files-pri/T-F18/f.png"
+            },
+            {
+              "id": "F19",
+              "mimetype": "image/png",
+              "name": "f19.png",
+              "url_private": "https://files.slack.com/files-pri/T-F19/f.png"
+            },
+            {
+              "id": "F20",
+              "mimetype": "image/png",
+              "name": "f20.png",
+              "url_private": "https://files.slack.com/files-pri/T-F20/f.png"
+            },
+            {
+              "id": "F21",
+              "mimetype": "image/png",
+              "name": "f21.png",
+              "url_private": "https://files.slack.com/files-pri/T-F21/f.png"
+            },
+            {
+              "id": "F22",
+              "mimetype": "image/png",
+              "name": "f22.png",
+              "url_private": "https://files.slack.com/files-pri/T-F22/f.png"
+            },
+            {
+              "id": "F23",
+              "mimetype": "image/png",
+              "name": "f23.png",
+              "url_private": "https://files.slack.com/files-pri/T-F23/f.png"
+            },
+            {
+              "id": "F24",
+              "mimetype": "image/png",
+              "name": "f24.png",
+              "url_private": "https://files.slack.com/files-pri/T-F24/f.png"
+            }
+          ],
+          "text": "the export button crashes",
+          "ts": "1712345678.000100",
+          "type": "message",
+          "user": "U123"
+        },
+        "event_id": "Ev1",
+        "team_id": "T001"
+      }
+    }
+  ],
+  "truncation": {
+    "count": 20003,
+    "expected_chars": 20000,
+    "unit": "é"
+  }
+}

@@ -1,0 +1,530 @@
+{
+  "answer": {
+    "method": "POST",
+    "path": "/v1/connectors/slack/commands/{id}/result",
+    "requests": [
+      {
+        "error": null,
+        "ok": true,
+        "value": {
+          "kind": "verified",
+          "team": "Acme"
+        }
+      },
+      {
+        "error": null,
+        "ok": true,
+        "value": {
+          "channel": {
+            "id": "C0FEEDBK",
+            "is_member": true,
+            "is_private": false,
+            "name": "feedback"
+          },
+          "kind": "channel"
+        }
+      },
+      {
+        "error": null,
+        "ok": true,
+        "value": {
+          "kind": "done"
+        }
+      },
+      {
+        "error": null,
+        "ok": true,
+        "value": {
+          "conversation": "D0DIRECTMSG",
+          "kind": "direct"
+        }
+      },
+      {
+        "error": null,
+        "ok": true,
+        "value": {
+          "kind": "name",
+          "name": "Dana Lee"
+        }
+      },
+      {
+        "error": null,
+        "ok": true,
+        "value": {
+          "kind": "name",
+          "name": null
+        }
+      },
+      {
+        "error": null,
+        "ok": true,
+        "value": {
+          "channels": [
+            {
+              "id": "C0FEEDBK",
+              "is_member": true,
+              "is_private": false,
+              "name": "feedback"
+            }
+          ],
+          "kind": "channels"
+        }
+      },
+      {
+        "error": null,
+        "ok": true,
+        "value": {
+          "kind": "prepared",
+          "prepared": {
+            "attachments": [
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            ],
+            "body": "it crashes",
+            "note": "(1 file skipped: too large)",
+            "sender": "Dana Lee"
+          }
+        }
+      },
+      {
+        "error": {
+          "code": "missing_scope",
+          "kind": "api",
+          "needed": "files:write"
+        },
+        "ok": false,
+        "value": null
+      },
+      {
+        "error": {
+          "code": "channel_not_found",
+          "kind": "api",
+          "needed": null
+        },
+        "ok": false,
+        "value": null
+      },
+      {
+        "error": {
+          "kind": "limited",
+          "seconds": 7
+        },
+        "ok": false,
+        "value": null
+      },
+      {
+        "error": {
+          "kind": "status",
+          "status": 502
+        },
+        "ok": false,
+        "value": null
+      },
+      {
+        "error": {
+          "kind": "unsent",
+          "text": "connection refused"
+        },
+        "ok": false,
+        "value": null
+      },
+      {
+        "error": {
+          "kind": "unsure",
+          "text": "reset"
+        },
+        "ok": false,
+        "value": null
+      },
+      {
+        "error": {
+          "code": "bridge.bad_token",
+          "kind": "verify",
+          "message": "The bot token starts with xoxb-"
+        },
+        "ok": false,
+        "value": null
+      }
+    ],
+    "response": {
+      "ok": true
+    }
+  },
+  "claim": {
+    "method": "POST",
+    "path": "/v1/connectors/slack/outbox/claim",
+    "request": {
+      "wait_ms": 25000
+    },
+    "responses": [
+      {
+        "rows": [
+          {
+            "attempts": 1,
+            "channel": "C0FEEDBK",
+            "files": [
+              {
+                "mime": "image/png",
+                "name": "shot.png",
+                "sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "size": 2048
+              },
+              {
+                "mime": "image/png",
+                "name": "gone.png",
+                "sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "size": null
+              }
+            ],
+            "id": "0001712345678000-1a2b3c4d",
+            "text": "Fixed in the next build",
+            "thread_ts": "1712345678.000100"
+          }
+        ]
+      },
+      {
+        "rows": []
+      }
+    ]
+  },
+  "errors": [
+    {
+      "code": "connector.token_required",
+      "status": 401
+    },
+    {
+      "code": "connector.token_invalid",
+      "status": 401
+    },
+    {
+      "code": "connector.token_revoked",
+      "status": 401
+    },
+    {
+      "code": "connector.scope_forbidden",
+      "status": 403
+    },
+    {
+      "code": "connector.route_forbidden",
+      "status": 403
+    },
+    {
+      "code": "connector.protocol",
+      "status": 409
+    },
+    {
+      "code": "connector.already_attached",
+      "status": 409
+    },
+    {
+      "code": "connector.not_attached",
+      "status": 409
+    },
+    {
+      "code": "connector.row_unknown",
+      "status": 404
+    },
+    {
+      "code": "connector.command_unknown",
+      "status": 404
+    },
+    {
+      "code": "connector.bad_request",
+      "status": 400
+    },
+    {
+      "code": "connector.media_gone",
+      "status": 404
+    },
+    {
+      "code": "bridge.backlog_full",
+      "status": 503
+    }
+  ],
+  "header": "x-commission-connector-token",
+  "inbound": {
+    "method": "POST",
+    "path": "/v1/connectors/slack/inbound",
+    "request": {
+      "client_msg_id": "cm-1",
+      "event_id": "Ev1",
+      "message": {
+        "conversation": "C0FEEDBK",
+        "files": [
+          {
+            "id": "F1",
+            "mime": "image/png",
+            "name": "shot.png",
+            "size": 1234,
+            "url": "https://files.slack.com/files-pri/T-F1/shot.png"
+          }
+        ],
+        "id": "1712345678.000100",
+        "mentioned": true,
+        "provider": "slack",
+        "sender_id": "U123",
+        "sender_name": null,
+        "text": "it crashes",
+        "thread": "1712345000.000200",
+        "workspace": "T001"
+      }
+    },
+    "responses": [
+      {
+        "accepted": true,
+        "notice": null
+      },
+      {
+        "accepted": true,
+        "notice": {
+          "conversation": "C0FEEDBK",
+          "text": "I am not connected to <#C0FEEDBK> yet",
+          "thread_ts": "1712345678.000100"
+        }
+      }
+    ]
+  },
+  "media": {
+    "fetch": {
+      "method": "GET",
+      "path": "/v1/connectors/slack/media/{sha}"
+    },
+    "stage": {
+      "method": "POST",
+      "path": "/v1/connectors/slack/media?name={name}",
+      "response": {
+        "duration_ms": null,
+        "frames": [],
+        "height": null,
+        "mime": "image/png",
+        "name": "shot.png",
+        "sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "size": 6,
+        "width": null
+      }
+    }
+  },
+  "next": {
+    "method": "POST",
+    "path": "/v1/connectors/slack/commands/next",
+    "request": {
+      "wait_ms": 25000
+    },
+    "responses": [
+      {
+        "command": {
+          "call": {
+            "app_token": "xapp-test-app-token-0000000000000000",
+            "bot_token": "xoxb-test-bot-token-0000000000000000",
+            "kind": "verify"
+          },
+          "id": "cmd_00000000000000000000000000000000"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "channel": "C0FEEDBK",
+            "kind": "channel_info"
+          },
+          "id": "cmd_00000000000000000000000000000001"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "channel": "C0FEEDBK",
+            "kind": "join_channel"
+          },
+          "id": "cmd_00000000000000000000000000000002"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "kind": "open_direct",
+            "user": "U0ABCDEFG"
+          },
+          "id": "cmd_00000000000000000000000000000003"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "kind": "user_name",
+            "user": "U999"
+          },
+          "id": "cmd_00000000000000000000000000000004"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "kind": "joined_channels"
+          },
+          "id": "cmd_00000000000000000000000000000005"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "kind": "list_channels"
+          },
+          "id": "cmd_00000000000000000000000000000006"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "channel": "C0FEEDBK",
+            "kind": "post_message",
+            "text": "Hello",
+            "thread_ts": null
+          },
+          "id": "cmd_00000000000000000000000000000007"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "channel": "C0FEEDBK",
+            "kind": "post_message",
+            "text": "Hello",
+            "thread_ts": "1.1"
+          },
+          "id": "cmd_00000000000000000000000000000008"
+        }
+      },
+      {
+        "command": {
+          "call": {
+            "bot_user": "UBOT0001",
+            "kind": "prepare",
+            "limits": {
+              "cap_bytes": 1024,
+              "max_files": 4
+            },
+            "message": {
+              "conversation": "C0FEEDBK",
+              "files": [
+                {
+                  "id": "F1",
+                  "mime": "image/png",
+                  "name": "shot.png",
+                  "size": 1234,
+                  "url": "https://files.slack.com/files-pri/T-F1/shot.png"
+                }
+              ],
+              "id": "1712345678.000100",
+              "mentioned": true,
+              "provider": "slack",
+              "sender_id": "U123",
+              "sender_name": null,
+              "text": "it crashes",
+              "thread": "1712345000.000200",
+              "workspace": "T001"
+            }
+          },
+          "id": "cmd_00000000000000000000000000000009"
+        }
+      },
+      {
+        "command": null
+      }
+    ]
+  },
+  "protocol": 1,
+  "result": {
+    "method": "POST",
+    "path": "/v1/connectors/slack/outbox/{id}/result",
+    "requests": [
+      {
+        "delivery": "text",
+        "outcome": "delivered"
+      },
+      {
+        "delivery": "attached",
+        "outcome": "delivered"
+      },
+      {
+        "delivery": "fallback_scope",
+        "outcome": "delivered"
+      },
+      {
+        "delivery": "fallback_gone",
+        "outcome": "delivered"
+      },
+      {
+        "outcome": "limited",
+        "seconds": 42
+      },
+      {
+        "detail": "Can't reach Slack (offline)",
+        "outcome": "retry"
+      },
+      {
+        "detail": "Slack answered with HTTP 502. Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      {
+        "detail": "That Slack channel is archived",
+        "outcome": "failed"
+      },
+      {
+        "outcome": "released"
+      }
+    ],
+    "response": {
+      "ok": true
+    }
+  },
+  "session": {
+    "method": "POST",
+    "path": "/v1/connectors/slack/session",
+    "request": {
+      "generation": 0,
+      "protocol": 1,
+      "version": "0.1.0",
+      "wait_ms": 25000
+    },
+    "responses": [
+      {
+        "credentials": {
+          "app_token": "xapp-test-app-token-0000000000000000",
+          "bot_token": "xoxb-test-bot-token-0000000000000000"
+        },
+        "generation": 2,
+        "protocol": 1
+      },
+      {
+        "credentials": null,
+        "generation": 3,
+        "protocol": 1
+      }
+    ]
+  },
+  "status": {
+    "method": "PUT",
+    "path": "/v1/connectors/slack/status",
+    "requests": [
+      {
+        "detail": null,
+        "identity": {
+          "bot": "commissionbot",
+          "team": "Acme",
+          "team_id": "T001",
+          "user_id": "UBOT0001"
+        },
+        "phase": "online"
+      },
+      {
+        "detail": "Slack rejected the bot token",
+        "identity": null,
+        "phase": "failing"
+      }
+    ],
+    "response": {
+      "ok": true
+    }
+  },
+  "wait_ms_max": 25000
+}

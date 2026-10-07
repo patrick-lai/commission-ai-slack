@@ -1,0 +1,447 @@
+{
+  "allowed_file_url": [
+    {
+      "expected": true,
+      "url": "https://files.slack.com/files-pri/T-F/x.png"
+    },
+    {
+      "expected": true,
+      "url": "https://a.slack-files.com/x"
+    },
+    {
+      "expected": true,
+      "url": "https://FILES.SLACK.COM/x"
+    },
+    {
+      "expected": true,
+      "url": "https://files.slack.com:443/x"
+    },
+    {
+      "expected": true,
+      "url": "https://files.slack.com/"
+    },
+    {
+      "expected": false,
+      "url": "https://files-origin.slack.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://myteam.slack.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://slack.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://.slack-files.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://slack-files.com/x"
+    },
+    {
+      "expected": false,
+      "url": "http://files.slack.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://files.slack.com.evil.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://evilslack.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://slack.com.evil.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://evil.com/files.slack.com"
+    },
+    {
+      "expected": false,
+      "url": "https://files.slack.com@evil.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://user:pw@files.slack.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://user@files.slack.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://files.slack.com:8443/x"
+    },
+    {
+      "expected": false,
+      "url": "https://slack-files.com.evil.net/x"
+    },
+    {
+      "expected": false,
+      "url": "https://notslack-files.com/x"
+    },
+    {
+      "expected": true,
+      "url": "https://a.b.slack-files.com/x"
+    },
+    {
+      "expected": false,
+      "url": "https://files.slack.com./x"
+    },
+    {
+      "expected": false,
+      "url": "not a url"
+    },
+    {
+      "expected": false,
+      "url": ""
+    },
+    {
+      "expected": false,
+      "url": "ftp://files.slack.com/x"
+    },
+    {
+      "expected": false,
+      "url": "//files.slack.com/x"
+    }
+  ],
+  "defang": [
+    {
+      "expected": "＠here",
+      "text": "@here"
+    },
+    {
+      "expected": "a@b",
+      "text": "a@b"
+    },
+    {
+      "expected": "x ＠y",
+      "text": "x @y"
+    },
+    {
+      "expected": "_@z",
+      "text": "_@z"
+    },
+    {
+      "expected": "9@z",
+      "text": "9@z"
+    },
+    {
+      "expected": "é@z",
+      "text": "é@z"
+    },
+    {
+      "expected": "＠＠",
+      "text": "@@"
+    },
+    {
+      "expected": "(＠a)",
+      "text": "(@a)"
+    },
+    {
+      "expected": "[slack-thread one] and [slack-thread two]",
+      "text": "[slack-thread:one] and [slack-thread:two]"
+    },
+    {
+      "expected": "plain",
+      "text": "plain"
+    }
+  ],
+  "escape_text": [
+    {
+      "expected": "a &lt; b &amp; c &gt; d",
+      "text": "a < b & c > d"
+    },
+    {
+      "expected": "&amp;amp;",
+      "text": "&amp;"
+    },
+    {
+      "expected": "&lt;&gt;&amp;",
+      "text": "<>&"
+    },
+    {
+      "expected": "none",
+      "text": "none"
+    }
+  ],
+  "mention_ids": [
+    {
+      "expected": [
+        "U111",
+        "U222"
+      ],
+      "text": "<@U111> and <@U222|bob> and <@U111> <@lower>"
+    },
+    {
+      "expected": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8"
+      ],
+      "text": "<@U1><@U2><@U3><@U4><@U5><@U6><@U7><@U8><@U9><@U10>"
+    },
+    {
+      "expected": [],
+      "text": "<@U111"
+    },
+    {
+      "expected": [
+        "U111"
+      ],
+      "text": "<@U111|x|y>"
+    },
+    {
+      "expected": [],
+      "text": "text <@> <@|a> <@U9999999999999999999999999>"
+    },
+    {
+      "expected": [],
+      "text": "<@UAAAAAAAAAAAAAAAAAAAAAAAA>"
+    }
+  ],
+  "plain": [
+    {
+      "bot_user": "UBOT0001",
+      "expected": "hi ＠Dana Lee, see the report (https://example.com/a?b=1&c=2) and https://x.dev in #feedback ＠here a@b.co 1 < 2 && 3 > 2",
+      "names": {
+        "U111": "Sam   Poe",
+        "U999": "Dana Lee"
+      },
+      "text": "<@UBOT0001> hi <@U999>, see <https://example.com/a?b=1&amp;c=2|the report> and <https://x.dev> in <#C0FEEDBK|feedback> <!here> <mailto:a@b.co|a@b.co> 1 &lt; 2 &amp;&amp; 3 &gt; 2"
+    },
+    {
+      "bot_user": "",
+      "expected": "mail me at a@b.com",
+      "names": {},
+      "text": "mail me at a@b.com"
+    },
+    {
+      "bot_user": "",
+      "expected": "＠bugbot do this [slack-thread x:C1:1]",
+      "names": {},
+      "text": "@bugbot do this [slack-thread:x:C1:1]"
+    },
+    {
+      "bot_user": "",
+      "expected": "(＠x) and x_@y and é@y and ٣@y and ＠＠x and a@",
+      "names": {},
+      "text": "(@x) and x_@y and é@y and ٣@y and @@x and a@"
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": "＠Sam Poe and ＠bob and ＠carol and ＠U444",
+      "names": {
+        "U111": "Sam   Poe",
+        "U999": "Dana Lee"
+      },
+      "text": "<@U111> and <@U222|bob> and <@U333|@carol> and <@U444>"
+    },
+    {
+      "bot_user": "",
+      "expected": "#C1 #general #C3",
+      "names": {},
+      "text": "<#C1> <#C2|general> <#C3|>"
+    },
+    {
+      "bot_user": "",
+      "expected": "＠channel ＠everyone ＠here ＠oncall Feb 18",
+      "names": {},
+      "text": "<!channel> <!everyone> <!here|here> <!subteam^S123|@oncall> <!date^1392734382^{date_num}|Feb 18> <!unknown>"
+    },
+    {
+      "bot_user": "",
+      "expected": "https://a.dev b (https://b.dev) x@y.z mail call (tel:123)",
+      "names": {},
+      "text": "<https://a.dev|https://a.dev> <https://b.dev|b> <mailto:x@y.z> <mailto:x@y.z|mail> <tel:123|call>"
+    },
+    {
+      "bot_user": "",
+      "expected": "a b c <unclosed and <nested https://x.dev trail",
+      "names": {},
+      "text": "a < b > c <unclosed and <nested <https://x.dev> trail"
+    },
+    {
+      "bot_user": "",
+      "expected": "<＠Dana Lee> ＠x",
+      "names": {
+        "U111": "Sam   Poe",
+        "U999": "Dana Lee"
+      },
+      "text": "<<@U999>> <> <|> <@|x>"
+    },
+    {
+      "bot_user": "",
+      "expected": "&lt; <b> &amp;",
+      "names": {},
+      "text": "&amp;lt; &lt;b&gt; &amp;amp;"
+    },
+    {
+      "bot_user": "",
+      "expected": "leading spaces   and\ttabs\n\nnext line\nwindows",
+      "names": {},
+      "text": "  leading   spaces   and\ttabs  \n\n  next   line  \r\nwindows\r\n"
+    },
+    {
+      "bot_user": "",
+      "expected": "pad\n﻿mark﻿",
+      "names": {},
+      "text": "pad\n﻿mark﻿　"
+    },
+    {
+      "bot_user": "",
+      "expected": "",
+      "names": {},
+      "text": ""
+    },
+    {
+      "bot_user": "",
+      "expected": "",
+      "names": {},
+      "text": "   \n  "
+    },
+    {
+      "bot_user": "",
+      "expected": "line one\rstill one\nline two",
+      "names": {},
+      "text": "line one\rstill one\nline two"
+    },
+    {
+      "bot_user": "",
+      "expected": "[slack-thread abc] and [slack-thread def]",
+      "names": {},
+      "text": "[slack-thread:abc] and [slack-thread:def]"
+    },
+    {
+      "bot_user": "UBOT0001",
+      "expected": "＠Dana Lee asked ＠Sam Poe about ＠Dana Lee",
+      "names": {
+        "U111": "Sam   Poe",
+        "U999": "Dana Lee"
+      },
+      "text": "<@U999> asked <@U111> about <@U999>"
+    }
+  ],
+  "skipped_note": [
+    {
+      "expected": "",
+      "skips": []
+    },
+    {
+      "expected": "(2 files skipped: too large)",
+      "skips": [
+        "too_large",
+        "too_large"
+      ]
+    },
+    {
+      "expected": "(1 file skipped: too large, 1 file skipped: unsupported type)",
+      "skips": [
+        "unsupported",
+        "too_large"
+      ]
+    },
+    {
+      "expected": "(1 file skipped: the Slack app can't read files)",
+      "skips": [
+        "no_access"
+      ]
+    },
+    {
+      "expected": "(1 file skipped: too large, 1 file skipped: unsupported type, 1 file skipped: couldn't be downloaded, 1 file skipped: the Slack app can't read files, 2 files skipped: too many files)",
+      "skips": [
+        "extra",
+        "failed",
+        "too_large",
+        "no_access",
+        "unsupported",
+        "extra"
+      ]
+    },
+    {
+      "expected": "(1 file skipped: couldn't be downloaded)",
+      "skips": [
+        "failed"
+      ]
+    }
+  ],
+  "supported_mime": [
+    {
+      "expected": true,
+      "mime": "image/png"
+    },
+    {
+      "expected": true,
+      "mime": "IMAGE/PNG"
+    },
+    {
+      "expected": true,
+      "mime": " image/jpeg "
+    },
+    {
+      "expected": true,
+      "mime": "video/mp4"
+    },
+    {
+      "expected": true,
+      "mime": "application/pdf"
+    },
+    {
+      "expected": true,
+      "mime": "Application/PDF"
+    },
+    {
+      "expected": true,
+      "mime": "text/plain"
+    },
+    {
+      "expected": true,
+      "mime": "text/markdown"
+    },
+    {
+      "expected": true,
+      "mime": "text/csv"
+    },
+    {
+      "expected": true,
+      "mime": "application/json"
+    },
+    {
+      "expected": true,
+      "mime": "application/x-har+json"
+    },
+    {
+      "expected": true,
+      "mime": "application/zip"
+    },
+    {
+      "expected": false,
+      "mime": "application/x-msdownload"
+    },
+    {
+      "expected": false,
+      "mime": "text/html"
+    },
+    {
+      "expected": false,
+      "mime": ""
+    },
+    {
+      "expected": false,
+      "mime": "İmage/png"
+    },
+    {
+      "expected": false,
+      "mime": "images/png"
+    }
+  ]
+}

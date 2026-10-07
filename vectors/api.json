@@ -1,0 +1,4721 @@
+{
+  "bad_token": [
+    {
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered not_allowed_token_type",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: The Slack app is missing a permission: update the app from the manifest and reinstall it",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "bridge.bad_token: The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered channel_not_found",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered not_in_channel",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: That Slack channel is archived",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered method_not_supported_for_channel_type",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack asked us to slow down",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered internal_error",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered fatal_error",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered service_unavailable",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered request_timeout",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "bridge.bad_token: Slack answered not_allowed",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered something_else",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "bridge.slack_unreachable: Slack asked us to slow down. Try again in 0s",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "bridge.slack_unreachable: Slack asked us to slow down. Try again in 42s",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "bridge.slack_unreachable: Slack answered with HTTP 403",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "bridge.slack_unreachable: Slack answered with HTTP 502",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "bridge.slack_unreachable: Can't reach Slack (connection refused)",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "bridge.slack_unreachable: Can't reach Slack (reset)",
+      "method": "auth.test"
+    },
+    {
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "bridge.bad_token: Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered channel_not_found",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered not_in_channel",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: That Slack channel is archived",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered method_not_supported_for_channel_type",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack asked us to slow down",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered internal_error",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered fatal_error",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered service_unavailable",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered request_timeout",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "bridge.bad_token: Slack answered not_allowed",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "bridge.bad_token: Slack answered something_else",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "bridge.slack_unreachable: Slack asked us to slow down. Try again in 0s",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "bridge.slack_unreachable: Slack asked us to slow down. Try again in 42s",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "bridge.slack_unreachable: Slack answered with HTTP 403",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "bridge.slack_unreachable: Slack answered with HTTP 502",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "bridge.slack_unreachable: Can't reach Slack (connection refused)",
+      "method": "apps.connections.open"
+    },
+    {
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "bridge.slack_unreachable: Can't reach Slack (reset)",
+      "method": "apps.connections.open"
+    }
+  ],
+  "check_token_shape": [
+    {
+      "app": "xapp-test-app-token-0000000000000000",
+      "bot": "xoxb-test-bot-token-0000000000000000",
+      "expected": null
+    },
+    {
+      "app": " xapp-test-app-token-0000000000000000\n",
+      "bot": " xoxb-test-bot-token-0000000000000000 ",
+      "expected": null
+    },
+    {
+      "app": "xapp-test-app-token-0000000000000000",
+      "bot": "xapp-test-app-token-0000000000000000",
+      "expected": "bridge.bad_token: The bot token starts with xoxb-. Copy the Bot User OAuth Token from OAuth & Permissions in your Slack app"
+    },
+    {
+      "app": "xoxb-test-bot-token-0000000000000000",
+      "bot": "xoxb-test-bot-token-0000000000000000",
+      "expected": "bridge.bad_token: The app token starts with xapp-. Create one under Basic Information > App-Level Tokens with the connections:write scope"
+    },
+    {
+      "app": "xapp-test-app-token-0000000000000000",
+      "bot": "",
+      "expected": "bridge.bad_token: The bot token starts with xoxb-. Copy the Bot User OAuth Token from OAuth & Permissions in your Slack app"
+    },
+    {
+      "app": "xapp-short",
+      "bot": "xoxb-test-bot-token-0000000000000000",
+      "expected": "bridge.bad_token: The app token starts with xapp-. Create one under Basic Information > App-Level Tokens with the connections:write scope"
+    },
+    {
+      "app": "xapp-test-app-token-0000000000000000",
+      "bot": "xoxb-has space-123456789012345",
+      "expected": "bridge.bad_token: The bot token starts with xoxb-. Copy the Bot User OAuth Token from OAuth & Permissions in your Slack app"
+    },
+    {
+      "app": "xapp-test-app-token-0000000000000000",
+      "bot": "xoxb-00000000000000",
+      "expected": "bridge.bad_token: The bot token starts with xoxb-. Copy the Bot User OAuth Token from OAuth & Permissions in your Slack app"
+    },
+    {
+      "app": "xapp-test-app-token-0000000000000000",
+      "bot": "xoxb-000000000000000",
+      "expected": null
+    },
+    {
+      "app": "xapp-test-app-token-0000000000000000!",
+      "bot": "xoxb-test-bot-token-0000000000000000",
+      "expected": "bridge.bad_token: The app token starts with xapp-. Create one under Basic Information > App-Level Tokens with the connections:write scope"
+    }
+  ],
+  "complete_payload": [
+    {
+      "expected": {
+        "channel_id": "C0FEEDBK",
+        "files": [
+          {
+            "id": "F1",
+            "title": "a.png"
+          },
+          {
+            "id": "F2",
+            "title": "b.pdf"
+          }
+        ],
+        "initial_comment": "Here you go &amp;",
+        "thread_ts": "1712345678.000100"
+      },
+      "input": {
+        "channel": "C0FEEDBK",
+        "comment": "Here you go &amp;",
+        "files": [
+          [
+            "F1",
+            "a.png"
+          ],
+          [
+            "F2",
+            "b.pdf"
+          ]
+        ],
+        "thread_ts": "1712345678.000100"
+      }
+    },
+    {
+      "expected": {
+        "channel_id": "C1",
+        "files": [],
+        "initial_comment": "",
+        "thread_ts": "1.1"
+      },
+      "input": {
+        "channel": "C1",
+        "comment": "",
+        "files": [],
+        "thread_ts": "1.1"
+      }
+    }
+  ],
+  "constants": {
+    "backoff_ms": [
+      1000,
+      2000,
+      5000,
+      10000,
+      30000,
+      60000
+    ],
+    "channel_cap": 1000,
+    "default_app_description": "Passes messages that mention it to your CommissionAI team and answers in the thread when useful.",
+    "default_app_name": "CommissionAI",
+    "events": [
+      "app_mention",
+      "message.im"
+    ],
+    "files_gone_note": "(attachments could not be sent: the files are no longer available)",
+    "files_scope_note": "(attachments could not be sent: the Slack app is limited to its approved permissions, which do not include file uploads)",
+    "idle_timeout_ms": 75000,
+    "name_cache": 500,
+    "ping_every_ms": 30000,
+    "scopes": [
+      "app_mentions:read",
+      "channels:history",
+      "channels:read",
+      "chat:write",
+      "commands",
+      "groups:history",
+      "groups:read",
+      "im:history",
+      "im:read",
+      "im:write",
+      "users:read",
+      "users:read.email"
+    ],
+    "tolerated_scopes": [
+      "assistant:write",
+      "files:read",
+      "files:write"
+    ]
+  },
+  "describe": [
+    {
+      "code": "invalid_auth",
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "auth.test"
+    },
+    {
+      "code": "not_authed",
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "auth.test"
+    },
+    {
+      "code": "token_revoked",
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "auth.test"
+    },
+    {
+      "code": "token_expired",
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "auth.test"
+    },
+    {
+      "code": "account_inactive",
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "auth.test"
+    },
+    {
+      "code": "invalid_token",
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "auth.test"
+    },
+    {
+      "code": "not_allowed_token_type",
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_allowed_token_type",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "auth.test"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "channel_not_found",
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered channel_not_found",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "not_in_channel",
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_in_channel",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "is_archived",
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "That Slack channel is archived",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "method_not_supported_for_channel_type",
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered method_not_supported_for_channel_type",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "ratelimited",
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack asked us to slow down",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "internal_error",
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered internal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "fatal_error",
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered fatal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "service_unavailable",
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered service_unavailable",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "request_timeout",
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered request_timeout",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "not_allowed",
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack answered not_allowed",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "something_else",
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered something_else",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "Slack asked us to slow down. Try again in 0s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "Slack asked us to slow down. Try again in 42s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "Slack answered with HTTP 403",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "Slack answered with HTTP 502",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "Can't reach Slack (connection refused)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "Can't reach Slack (reset)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "auth.test"
+    },
+    {
+      "code": "invalid_auth",
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "not_authed",
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "token_revoked",
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "token_expired",
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "account_inactive",
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "invalid_token",
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "not_allowed_token_type",
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack rejected the app token: regenerate it under Basic Information > App-Level Tokens (it needs the connections:write scope)",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "channel_not_found",
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered channel_not_found",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "not_in_channel",
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_in_channel",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "is_archived",
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "That Slack channel is archived",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "method_not_supported_for_channel_type",
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered method_not_supported_for_channel_type",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "ratelimited",
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack asked us to slow down",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "internal_error",
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered internal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "fatal_error",
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered fatal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "service_unavailable",
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered service_unavailable",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "request_timeout",
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered request_timeout",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "not_allowed",
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack answered not_allowed",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "something_else",
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered something_else",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "Slack asked us to slow down. Try again in 0s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "Slack asked us to slow down. Try again in 42s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "Slack answered with HTTP 403",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "Slack answered with HTTP 502",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "Can't reach Slack (connection refused)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "Can't reach Slack (reset)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "apps.connections.open"
+    },
+    {
+      "code": "invalid_auth",
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "not_authed",
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "token_revoked",
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "token_expired",
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "account_inactive",
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "invalid_token",
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "not_allowed_token_type",
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_allowed_token_type",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "channel_not_found",
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is not in that channel: type /invite in that channel and pick the app",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "not_in_channel",
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is not in that channel: type /invite in that channel and pick the app",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "is_archived",
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "That Slack channel is archived",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "method_not_supported_for_channel_type",
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered method_not_supported_for_channel_type",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "ratelimited",
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack asked us to slow down",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "internal_error",
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered internal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "fatal_error",
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered fatal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "service_unavailable",
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered service_unavailable",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "request_timeout",
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered request_timeout",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "not_allowed",
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack answered not_allowed",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "something_else",
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered something_else",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "Slack asked us to slow down. Try again in 0s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "Slack asked us to slow down. Try again in 42s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "Slack answered with HTTP 403",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "Slack answered with HTTP 502",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "Can't reach Slack (connection refused)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "Can't reach Slack (reset)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "chat.postMessage"
+    },
+    {
+      "code": "invalid_auth",
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "not_authed",
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "token_revoked",
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "token_expired",
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "account_inactive",
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "invalid_token",
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "not_allowed_token_type",
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_allowed_token_type",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "channel_not_found",
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is not in that channel: type /invite in that channel and pick the app",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "not_in_channel",
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is not in that channel: type /invite in that channel and pick the app",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "is_archived",
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "That Slack channel is archived",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "method_not_supported_for_channel_type",
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered method_not_supported_for_channel_type",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "ratelimited",
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack asked us to slow down",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "internal_error",
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered internal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "fatal_error",
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered fatal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "service_unavailable",
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered service_unavailable",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "request_timeout",
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered request_timeout",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "not_allowed",
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack answered not_allowed",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "something_else",
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered something_else",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "Slack asked us to slow down. Try again in 0s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "Slack asked us to slow down. Try again in 42s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "Slack answered with HTTP 403",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "Slack answered with HTTP 502",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "Can't reach Slack (connection refused)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "Can't reach Slack (reset)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.completeUploadExternal"
+    },
+    {
+      "code": "invalid_auth",
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.join"
+    },
+    {
+      "code": "not_authed",
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.join"
+    },
+    {
+      "code": "token_revoked",
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.join"
+    },
+    {
+      "code": "token_expired",
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.join"
+    },
+    {
+      "code": "account_inactive",
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.join"
+    },
+    {
+      "code": "invalid_token",
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.join"
+    },
+    {
+      "code": "not_allowed_token_type",
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_allowed_token_type",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.join"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "channel_not_found",
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The bot can't join that channel on its own: type /invite in that channel and pick the app",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "not_in_channel",
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_in_channel",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "is_archived",
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "That Slack channel is archived",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "method_not_supported_for_channel_type",
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The bot can't join that channel on its own: type /invite in that channel and pick the app",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "ratelimited",
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack asked us to slow down",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "internal_error",
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered internal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "fatal_error",
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered fatal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "service_unavailable",
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered service_unavailable",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "request_timeout",
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered request_timeout",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "not_allowed",
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack answered not_allowed",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "something_else",
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered something_else",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "Slack asked us to slow down. Try again in 0s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "Slack asked us to slow down. Try again in 42s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "Slack answered with HTTP 403",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "Slack answered with HTTP 502",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "Can't reach Slack (connection refused)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "Can't reach Slack (reset)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.join"
+    },
+    {
+      "code": "invalid_auth",
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.info"
+    },
+    {
+      "code": "not_authed",
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.info"
+    },
+    {
+      "code": "token_revoked",
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.info"
+    },
+    {
+      "code": "token_expired",
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.info"
+    },
+    {
+      "code": "account_inactive",
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.info"
+    },
+    {
+      "code": "invalid_token",
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.info"
+    },
+    {
+      "code": "not_allowed_token_type",
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_allowed_token_type",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "conversations.info"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "channel_not_found",
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered channel_not_found",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "not_in_channel",
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_in_channel",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "is_archived",
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "That Slack channel is archived",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "method_not_supported_for_channel_type",
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered method_not_supported_for_channel_type",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "ratelimited",
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack asked us to slow down",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "internal_error",
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered internal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "fatal_error",
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered fatal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "service_unavailable",
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered service_unavailable",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "request_timeout",
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered request_timeout",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "not_allowed",
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack answered not_allowed",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "something_else",
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered something_else",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "Slack asked us to slow down. Try again in 0s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "Slack asked us to slow down. Try again in 42s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "Slack answered with HTTP 403",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "Slack answered with HTTP 502",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "Can't reach Slack (connection refused)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "Can't reach Slack (reset)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "conversations.info"
+    },
+    {
+      "code": "invalid_auth",
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.info"
+    },
+    {
+      "code": "not_authed",
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.info"
+    },
+    {
+      "code": "token_revoked",
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.info"
+    },
+    {
+      "code": "token_expired",
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.info"
+    },
+    {
+      "code": "account_inactive",
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.info"
+    },
+    {
+      "code": "invalid_token",
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.info"
+    },
+    {
+      "code": "not_allowed_token_type",
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_allowed_token_type",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.info"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "channel_not_found",
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered channel_not_found",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "not_in_channel",
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_in_channel",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "is_archived",
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "That Slack channel is archived",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "method_not_supported_for_channel_type",
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered method_not_supported_for_channel_type",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "ratelimited",
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack asked us to slow down",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "internal_error",
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered internal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "fatal_error",
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered fatal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "service_unavailable",
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered service_unavailable",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "request_timeout",
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered request_timeout",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "not_allowed",
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack answered not_allowed",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "something_else",
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered something_else",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "Slack asked us to slow down. Try again in 0s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "Slack asked us to slow down. Try again in 42s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "Slack answered with HTTP 403",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "Slack answered with HTTP 502",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "Can't reach Slack (connection refused)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "Can't reach Slack (reset)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.info"
+    },
+    {
+      "code": "invalid_auth",
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "not_authed",
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "token_revoked",
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "token_expired",
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "account_inactive",
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "invalid_token",
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "not_allowed_token_type",
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_allowed_token_type",
+      "files_unavailable": false,
+      "is_auth": true,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "missing_scope",
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "channel_not_found",
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered channel_not_found",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "not_in_channel",
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered not_in_channel",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "is_archived",
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "That Slack channel is archived",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "method_not_supported_for_channel_type",
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered method_not_supported_for_channel_type",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "ratelimited",
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack asked us to slow down",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "internal_error",
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered internal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "fatal_error",
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered fatal_error",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "service_unavailable",
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered service_unavailable",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "request_timeout",
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered request_timeout",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "not_allowed",
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": "Slack answered not_allowed",
+      "files_unavailable": true,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": "something_else",
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": "Slack answered something_else",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": "Slack asked us to slow down. Try again in 0s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": "Slack asked us to slow down. Try again in 42s",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": "Slack answered with HTTP 403",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": "Slack answered with HTTP 502",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": "Can't reach Slack (connection refused)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    },
+    {
+      "code": null,
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": "Can't reach Slack (reset)",
+      "files_unavailable": false,
+      "is_auth": false,
+      "method": "files.getUploadURLExternal"
+    }
+  ],
+  "fallback_text": [
+    {
+      "expected": "Fixed in the next build\n(attachments could not be sent: the Slack app is limited to its approved permissions, which do not include file uploads)",
+      "fallback": "scope",
+      "text": "Fixed in the next build"
+    },
+    {
+      "expected": "Fixed in the next build\n(attachments could not be sent: the files are no longer available)",
+      "fallback": "gone",
+      "text": "Fixed in the next build"
+    },
+    {
+      "expected": "\n(attachments could not be sent: the files are no longer available)",
+      "fallback": "gone",
+      "text": ""
+    }
+  ],
+  "manifest": [
+    {
+      "description": "Passes messages that mention it to your CommissionAI team and answers in the thread when useful.",
+      "expected": "{\"display_information\":{\"description\":\"Passes messages that mention it to your CommissionAI team and answers in the thread when useful.\",\"name\":\"CommissionAI\"},\"features\":{\"bot_user\":{\"always_online\":true,\"display_name\":\"CommissionAI\"}},\"oauth_config\":{\"scopes\":{\"bot\":[\"app_mentions:read\",\"channels:history\",\"channels:read\",\"chat:write\",\"commands\",\"groups:history\",\"groups:read\",\"im:history\",\"im:read\",\"im:write\",\"users:read\",\"users:read.email\"]}},\"settings\":{\"event_subscriptions\":{\"bot_events\":[\"app_mention\",\"message.im\"]},\"interactivity\":{\"is_enabled\":false},\"org_deploy_enabled\":false,\"socket_mode_enabled\":true,\"token_rotation_enabled\":false}}",
+      "name": "CommissionAI"
+    },
+    {
+      "description": "Reads & routes <messages> — café",
+      "expected": "{\"display_information\":{\"description\":\"Reads & routes <messages> — café\",\"name\":\"Triage \\\"bot\\\"\"},\"features\":{\"bot_user\":{\"always_online\":true,\"display_name\":\"Triage \\\"bot\\\"\"}},\"oauth_config\":{\"scopes\":{\"bot\":[\"app_mentions:read\",\"channels:history\",\"channels:read\",\"chat:write\",\"commands\",\"groups:history\",\"groups:read\",\"im:history\",\"im:read\",\"im:write\",\"users:read\",\"users:read.email\"]}},\"settings\":{\"event_subscriptions\":{\"bot_events\":[\"app_mention\",\"message.im\"]},\"interactivity\":{\"is_enabled\":false},\"org_deploy_enabled\":false,\"socket_mode_enabled\":true,\"token_rotation_enabled\":false}}",
+      "name": "Triage \"bot\""
+    }
+  ],
+  "merge_channels": [
+    {
+      "expected": [
+        {
+          "id": "C0ONE0001",
+          "is_member": false,
+          "is_private": true,
+          "name": "Alpha"
+        },
+        {
+          "id": "C0TWO0001",
+          "is_member": false,
+          "is_private": false,
+          "name": "alpha"
+        },
+        {
+          "id": "C0BOTH01",
+          "is_member": true,
+          "is_private": false,
+          "name": "general"
+        },
+        {
+          "id": "C0JOINED",
+          "is_member": true,
+          "is_private": false,
+          "name": "zz-team-agents"
+        },
+        {
+          "id": "C0THREE01",
+          "is_member": false,
+          "is_private": false,
+          "name": "éclair"
+        }
+      ],
+      "joined": [
+        {
+          "id": "C0JOINED",
+          "is_member": true,
+          "is_private": false,
+          "name": "zz-team-agents"
+        },
+        {
+          "id": "C0BOTH01",
+          "is_member": true,
+          "is_private": false,
+          "name": "general"
+        }
+      ],
+      "listed": [
+        {
+          "id": "C0BOTH01",
+          "is_member": false,
+          "is_private": false,
+          "name": "general"
+        },
+        {
+          "id": "C0ONE0001",
+          "is_member": false,
+          "is_private": true,
+          "name": "Alpha"
+        },
+        {
+          "id": "C0TWO0001",
+          "is_member": false,
+          "is_private": false,
+          "name": "alpha"
+        },
+        {
+          "id": "C0THREE01",
+          "is_member": false,
+          "is_private": false,
+          "name": "éclair"
+        }
+      ]
+    },
+    {
+      "expected": [],
+      "joined": [],
+      "listed": []
+    },
+    {
+      "expected": [
+        {
+          "id": "C3",
+          "is_member": false,
+          "is_private": false,
+          "name": "a"
+        },
+        {
+          "id": "C2",
+          "is_member": false,
+          "is_private": false,
+          "name": "b"
+        },
+        {
+          "id": "C1",
+          "is_member": false,
+          "is_private": false,
+          "name": "B"
+        }
+      ],
+      "joined": [],
+      "listed": [
+        {
+          "id": "C2",
+          "is_member": false,
+          "is_private": false,
+          "name": "b"
+        },
+        {
+          "id": "C1",
+          "is_member": false,
+          "is_private": false,
+          "name": "B"
+        },
+        {
+          "id": "C3",
+          "is_member": false,
+          "is_private": false,
+          "name": "a"
+        }
+      ]
+    }
+  ],
+  "merge_channels_cap": {
+    "cap": 1000,
+    "expected_both_member": true,
+    "expected_both_once": 1,
+    "expected_joined_kept": true,
+    "expected_len": 1000,
+    "joined": [
+      {
+        "id": "C0JOINED",
+        "name": "zz-team-agents"
+      },
+      {
+        "id": "C0BOTH01",
+        "name": "general"
+      }
+    ],
+    "listed_count": 1000,
+    "listed_extra": {
+      "id": "C0BOTH01",
+      "name": "general"
+    },
+    "listed_id": "C{index:07}",
+    "listed_name": "aa-{index:04}"
+  },
+  "redaction": [
+    {
+      "forbidden": [
+        "xox",
+        "xapp-test",
+        "0000000000"
+      ],
+      "text": "Authorization: Bearer xoxb-test-bot-token-0000000000000000"
+    },
+    {
+      "forbidden": [
+        "xox",
+        "xapp-test",
+        "0000000000"
+      ],
+      "text": "token xapp-test-app-token-0000000000000000 failed"
+    },
+    {
+      "forbidden": [
+        "xox",
+        "xapp-test",
+        "0000000000"
+      ],
+      "text": "xoxb-test-bot-token-0000000000000000"
+    },
+    {
+      "forbidden": [
+        "xox",
+        "xapp-test",
+        "0000000000"
+      ],
+      "text": "xoxp-test-user-token-0000000000"
+    },
+    {
+      "forbidden": [
+        "xox",
+        "xapp-test",
+        "0000000000"
+      ],
+      "text": "retry with xapp-test-app-token-0000000000000000, then xoxb-test-bot-token-0000000000000000"
+    }
+  ],
+  "scope_locked": [
+    {
+      "expected": "The Slack app has permissions outside the approved list (mpim:history): create the app again from the CommissionAI manifest and reinstall it",
+      "unapproved": [
+        "mpim:history"
+      ]
+    },
+    {
+      "expected": "The Slack app has permissions outside the approved list (admin, channels:write): create the app again from the CommissionAI manifest and reinstall it",
+      "unapproved": [
+        "admin",
+        "channels:write"
+      ]
+    }
+  ],
+  "sent_after": [
+    {
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered not_allowed_token_type",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": {
+        "detail": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "The Slack app is not in that channel: type /invite in that channel and pick the app",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "The Slack app is not in that channel: type /invite in that channel and pick the app",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "That Slack channel is archived",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered method_not_supported_for_channel_type",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack asked us to slow down",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered internal_error",
+        "outcome": "retry"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered fatal_error",
+        "outcome": "retry"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered service_unavailable",
+        "outcome": "retry"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered request_timeout",
+        "outcome": "retry"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": {
+        "detail": "Slack answered not_allowed",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered something_else",
+        "outcome": "failed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": {
+        "outcome": "limited",
+        "seconds": 0
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": {
+        "outcome": "limited",
+        "seconds": 42
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": {
+        "detail": "Slack answered with HTTP 403. Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": {
+        "detail": "Slack answered with HTTP 502. Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": {
+        "detail": "Can't reach Slack (connection refused)",
+        "outcome": "retry"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": {
+        "detail": "Can't reach Slack (reset). Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "text"
+    },
+    {
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered not_allowed_token_type",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": {
+        "detail": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered channel_not_found",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered not_in_channel",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "That Slack channel is archived",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered method_not_supported_for_channel_type",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack asked us to slow down",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered internal_error",
+        "outcome": "retry"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered fatal_error",
+        "outcome": "retry"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered service_unavailable",
+        "outcome": "retry"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered request_timeout",
+        "outcome": "retry"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": {
+        "detail": "Slack answered not_allowed",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered something_else",
+        "outcome": "failed"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": {
+        "outcome": "limited",
+        "seconds": 0
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": {
+        "outcome": "limited",
+        "seconds": 42
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": {
+        "detail": "Slack answered with HTTP 403",
+        "outcome": "retry"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": {
+        "detail": "Slack answered with HTTP 502",
+        "outcome": "retry"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": {
+        "detail": "Can't reach Slack (connection refused)",
+        "outcome": "retry"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": {
+        "detail": "Can't reach Slack (reset)",
+        "outcome": "retry"
+      },
+      "stage": "prepare"
+    },
+    {
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered not_allowed_token_type",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": {
+        "detail": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered channel_not_found",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered not_in_channel",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "That Slack channel is archived",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered method_not_supported_for_channel_type",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack asked us to slow down",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered internal_error",
+        "outcome": "retry"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered fatal_error",
+        "outcome": "retry"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered service_unavailable",
+        "outcome": "retry"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered request_timeout",
+        "outcome": "retry"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": {
+        "detail": "Slack answered not_allowed",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered something_else",
+        "outcome": "failed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": {
+        "outcome": "limited",
+        "seconds": 0
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": {
+        "outcome": "limited",
+        "seconds": 42
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": {
+        "detail": "Slack answered with HTTP 403. Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": {
+        "detail": "Slack answered with HTTP 502. Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": {
+        "detail": "Can't reach Slack (connection refused)",
+        "outcome": "retry"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": {
+        "detail": "Can't reach Slack (reset). Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "upload"
+    },
+    {
+      "error": {
+        "code": "invalid_auth",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "not_authed",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "token_revoked",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "token_expired",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "account_inactive",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "invalid_token",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack rejected the bot token: reinstall the app and copy the Bot User OAuth Token (xoxb-) again",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "not_allowed_token_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered not_allowed_token_type",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "The Slack app is missing a permission: update the app from the manifest and reinstall it",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "missing_scope",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": {
+        "detail": "The Slack app is missing a permission (files:write): update the app from the manifest and reinstall it",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "channel_not_found",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "The Slack app is not in that channel: type /invite in that channel and pick the app",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "not_in_channel",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "The Slack app is not in that channel: type /invite in that channel and pick the app",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "is_archived",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "That Slack channel is archived",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "method_not_supported_for_channel_type",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered method_not_supported_for_channel_type",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "ratelimited",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack asked us to slow down",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "internal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered internal_error",
+        "outcome": "retry"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "fatal_error",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered fatal_error",
+        "outcome": "retry"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "service_unavailable",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered service_unavailable",
+        "outcome": "retry"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "request_timeout",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered request_timeout",
+        "outcome": "retry"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "not_allowed",
+        "kind": "api",
+        "needed": "files:write"
+      },
+      "expected": {
+        "detail": "Slack answered not_allowed",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "code": "something_else",
+        "kind": "api",
+        "needed": null
+      },
+      "expected": {
+        "detail": "Slack answered something_else",
+        "outcome": "failed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 0
+      },
+      "expected": {
+        "outcome": "limited",
+        "seconds": 0
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "kind": "limited",
+        "seconds": 42
+      },
+      "expected": {
+        "outcome": "limited",
+        "seconds": 42
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 403
+      },
+      "expected": {
+        "detail": "Slack answered with HTTP 403. Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "kind": "status",
+        "status": 502
+      },
+      "expected": {
+        "detail": "Slack answered with HTTP 502. Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "kind": "unsent",
+        "text": "connection refused"
+      },
+      "expected": {
+        "detail": "Can't reach Slack (connection refused)",
+        "outcome": "retry"
+      },
+      "stage": "complete"
+    },
+    {
+      "error": {
+        "kind": "unsure",
+        "text": "reset"
+      },
+      "expected": {
+        "detail": "Can't reach Slack (reset). Check the thread before sending it again",
+        "outcome": "unconfirmed"
+      },
+      "stage": "complete"
+    }
+  ],
+  "slot_of": [
+    {
+      "expected": {
+        "id": "F0123",
+        "url": "https://files.slack.com/upload/v1/ABC?x=1"
+      },
+      "value": {
+        "file_id": "F0123",
+        "ok": true,
+        "upload_url": "https://files.slack.com/upload/v1/ABC?x=1"
+      }
+    },
+    {
+      "expected": {
+        "error": "Can't reach Slack (Slack did not return a usable upload address)"
+      },
+      "value": {
+        "upload_url": "https://files.slack.com/upload/v1/ABC"
+      }
+    },
+    {
+      "expected": {
+        "error": "Can't reach Slack (Slack did not return a usable upload address)"
+      },
+      "value": {
+        "file_id": "F1"
+      }
+    },
+    {
+      "expected": {
+        "error": "Can't reach Slack (Slack did not return a usable upload address)"
+      },
+      "value": {
+        "file_id": "F1",
+        "upload_url": "https://evil.example.com/upload"
+      }
+    },
+    {
+      "expected": {
+        "error": "Can't reach Slack (Slack did not return a usable upload address)"
+      },
+      "value": {
+        "file_id": "F1",
+        "upload_url": "http://files.slack.com/upload"
+      }
+    },
+    {
+      "expected": {
+        "error": "Can't reach Slack (Slack did not return a usable upload address)"
+      },
+      "value": {
+        "file_id": "F1",
+        "upload_url": "https://files.slack.com@evil.com/x"
+      }
+    },
+    {
+      "expected": {
+        "error": "Can't reach Slack (Slack did not return a usable upload address)"
+      },
+      "value": {
+        "file_id": "F1",
+        "upload_url": "not a url"
+      }
+    },
+    {
+      "expected": {
+        "id": "F7",
+        "url": "https://files.slack.com/upload/v1/ABC"
+      },
+      "value": {
+        "file_id": "  F7  ",
+        "upload_url": "  https://files.slack.com/upload/v1/ABC  "
+      }
+    },
+    {
+      "expected": {
+        "error": "Can't reach Slack (Slack did not return a usable upload address)"
+      },
+      "value": {
+        "file_id": "F1",
+        "upload_url": 7
+      }
+    }
+  ],
+  "socket_error": [
+    {
+      "expected": "The proxy refused the connection to the Slack service (HTTP/1.1 407 Proxy Authentication Required)",
+      "text": "team.unreachable: The proxy refused the connection to the Slack service (HTTP/1.1 407 Proxy Authentication Required)",
+      "url": "wss://x"
+    },
+    {
+      "expected": "The Slack service at host refused the connection (bad )",
+      "text": "team.unreachable: The Slack service at host refused the connection (bad wss://wss-primary.slack.com/link/?ticket=abc)",
+      "url": "wss://wss-primary.slack.com/link/?ticket=abc"
+    },
+    {
+      "expected": "plain failure",
+      "text": "plain failure",
+      "url": "wss://x"
+    },
+    {
+      "expected": "not a code: still plain",
+      "text": "not a code: still plain",
+      "url": "wss://x"
+    },
+    {
+      "expected": "with code",
+      "text": "a.b: with code",
+      "url": ""
+    },
+    {
+      "expected": "x.y z: spaced",
+      "text": "x.y z: spaced",
+      "url": ""
+    }
+  ],
+  "unapproved_scopes": [
+    {
+      "expected": [],
+      "granted": "chat:write, app_mentions:read,im:history"
+    },
+    {
+      "expected": [],
+      "granted": ""
+    },
+    {
+      "expected": [
+        "mpim:history"
+      ],
+      "granted": "chat:write,files:write, mpim:history,"
+    },
+    {
+      "expected": [],
+      "granted": "assistant:write,files:read,files:write"
+    },
+    {
+      "expected": [
+        "admin",
+        "channels:write"
+      ],
+      "granted": "chat:write,admin,channels:write"
+    },
+    {
+      "expected": [],
+      "granted": " , ,"
+    },
+    {
+      "expected": [
+        "unknown:scope"
+      ],
+      "granted": "chat:write,chat:write,unknown:scope"
+    }
+  ],
+  "upload_form": [
+    {
+      "expected": [
+        [
+          "filename",
+          "shot one.png"
+        ],
+        [
+          "length",
+          "2048"
+        ]
+      ],
+      "length": 2048,
+      "name": "shot one.png"
+    },
+    {
+      "expected": [
+        [
+          "filename",
+          "a.pdf"
+        ],
+        [
+          "length",
+          "0"
+        ]
+      ],
+      "length": 0,
+      "name": "a.pdf"
+    }
+  ],
+  "went_quiet": [
+    {
+      "expected": false,
+      "idle_ms": 75000,
+      "since_ms": 30000
+    },
+    {
+      "expected": false,
+      "idle_ms": 75000,
+      "since_ms": 75000
+    },
+    {
+      "expected": true,
+      "idle_ms": 75000,
+      "since_ms": 75001
+    },
+    {
+      "expected": false,
+      "idle_ms": 0,
+      "since_ms": 0
+    },
+    {
+      "expected": true,
+      "idle_ms": 0,
+      "since_ms": 1
+    }
+  ]
+}

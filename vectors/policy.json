@@ -1,0 +1,1433 @@
+{
+  "compose": [
+    {
+      "conversation": "C0FEEDBK1",
+      "expected": "@triage Slack · Dana Lee in #feedback-triage: the export button crashes\n(2 files skipped: too large)\n[slack-thread:bl_1:C0FEEDBK1:1712345678.000100]",
+      "handle": "triage",
+      "max_bytes": 16384,
+      "prepared": {
+        "attachments": [
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ],
+        "body": "the export button crashes",
+        "note": "(2 files skipped: too large)",
+        "sender": "Dana Lee"
+      },
+      "thread": "1712345678.000100",
+      "unframed": [
+        "Dana Lee",
+        "the export button crashes\n(2 files skipped: too large)"
+      ]
+    },
+    {
+      "conversation": "C0FEEDBK1",
+      "expected": "Slack · Dana Lee in #feedback-triage: (attachment)\n(2 files skipped: too large)\n[slack-thread:bl_1:C0FEEDBK1:1.1]",
+      "handle": null,
+      "max_bytes": 4096,
+      "prepared": {
+        "attachments": [
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ],
+        "body": "",
+        "note": "(2 files skipped: too large)",
+        "sender": "Dana Lee"
+      },
+      "thread": "1.1",
+      "unframed": [
+        "Dana Lee",
+        "(attachment)\n(2 files skipped: too large)"
+      ]
+    },
+    {
+      "conversation": "C0FEEDBK1",
+      "expected": "Slack · Dana Lee in #feedback-triage: padded body\n[slack-thread:bl_1:C0FEEDBK1:1.1]",
+      "handle": null,
+      "max_bytes": 4096,
+      "prepared": {
+        "attachments": [],
+        "body": "  padded body  ",
+        "note": "",
+        "sender": "Dana Lee"
+      },
+      "thread": "1.1",
+      "unframed": [
+        "Dana Lee",
+        "padded body"
+      ]
+    },
+    {
+      "conversation": "C0FEEDBK1",
+      "expected": "Slack · Dana Lee in #feedback-triage: ééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé...\n(2 files skipped: too large)\n[slack-thread:bl_1:C0FEEDBK1:1.1]",
+      "handle": null,
+      "max_bytes": 1024,
+      "prepared": {
+        "attachments": [
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ],
+        "body": "éééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé",
+        "note": "(2 files skipped: too large)",
+        "sender": "Dana Lee"
+      },
+      "thread": "1.1",
+      "unframed": [
+        "Dana Lee",
+        "ééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé...\n(2 files skipped: too large)"
+      ]
+    },
+    {
+      "conversation": "C0FEEDBK1",
+      "expected": "@triage Slack · Dana in #feedback-triage: multi\nline\nbody\n[slack-thread:bl_1:C0FEEDBK1:1.1]",
+      "handle": "triage",
+      "max_bytes": 16384,
+      "prepared": {
+        "attachments": [],
+        "body": "multi\nline\nbody",
+        "note": "",
+        "sender": "Dana"
+      },
+      "thread": "1.1",
+      "unframed": [
+        "Dana",
+        "multi\nline\nbody"
+      ]
+    }
+  ],
+  "constants": {
+    "dedupe_window": 2000,
+    "expiry_secs": 86400,
+    "in_backoff": [
+      5,
+      15,
+      60,
+      300,
+      900
+    ],
+    "max_outbox": 200,
+    "max_pending": 200,
+    "max_reply_files": 4,
+    "out_backoff": [
+      5,
+      30,
+      120,
+      600,
+      1800
+    ],
+    "per_sender_hour": 20
+  },
+  "dedupe": [
+    {
+      "expected": null,
+      "key": "a",
+      "op": "insert"
+    },
+    {
+      "expected": null,
+      "key": "b",
+      "op": "insert"
+    },
+    {
+      "expected": null,
+      "key": "b",
+      "op": "insert"
+    },
+    {
+      "expected": true,
+      "key": "a",
+      "op": "contains"
+    },
+    {
+      "expected": true,
+      "key": "b",
+      "op": "contains"
+    },
+    {
+      "expected": null,
+      "key": "c",
+      "op": "insert"
+    },
+    {
+      "expected": false,
+      "key": "a",
+      "op": "contains"
+    },
+    {
+      "expected": true,
+      "key": "b",
+      "op": "contains"
+    },
+    {
+      "expected": true,
+      "key": "c",
+      "op": "contains"
+    }
+  ],
+  "markers": {
+    "marker": "[slack-thread:bl_1:C0FEEDBK1:1712345000.000200]",
+    "post_key": "slack:T001:C0FEEDBK1:1712345678.000100",
+    "thread_marker": [
+      {
+        "expected": "[slack-thread:bl_1:C0FEEDBK1:1.1]",
+        "text": "@triage Slack · Dana in #qa: hi\n[slack-thread:bl_1:C0FEEDBK1:1.1]"
+      },
+      {
+        "expected": null,
+        "text": "a teammate typed this"
+      }
+    ]
+  },
+  "out_dedupe": [
+    {
+      "expected": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+      "files": [],
+      "link": "bl_1",
+      "text": "hi",
+      "thread_ts": "10.1"
+    },
+    {
+      "expected": "a3910e3814aa391aa34cf00c06dbc2e21be1bff120b1da11f32af475dad37f7b",
+      "files": [],
+      "link": "bl_1",
+      "text": "hi",
+      "thread_ts": "10.2"
+    },
+    {
+      "expected": "b717a64fc7fe0207324dbb2f47aac85a9e35d4f15710104fab0e61a90976e358",
+      "files": [
+        {
+          "mime": "image/png",
+          "name": "aa.bin",
+          "sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      ],
+      "link": "bl_1",
+      "text": "hi",
+      "thread_ts": "10.1"
+    },
+    {
+      "expected": "6ab3ef7a97f210ade935d1c5c71c92ed6b71c0a1eb3077a0cb0190fed0a6e594",
+      "files": [
+        {
+          "mime": "image/png",
+          "name": "bb.bin",
+          "sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        }
+      ],
+      "link": "bl_1",
+      "text": "hi",
+      "thread_ts": "10.1"
+    },
+    {
+      "expected": "68b7fd2c7efa99852fd604391292596cfcf6ed0e9fdeb533441d5a92072d1fe3",
+      "files": [
+        {
+          "mime": "image/png",
+          "name": "aa.bin",
+          "sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        {
+          "mime": "image/png",
+          "name": "bb.bin",
+          "sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        }
+      ],
+      "link": "bl_1",
+      "text": "hi",
+      "thread_ts": "10.1"
+    },
+    {
+      "expected": "d23ee10bc8c84a5681d5cc3ba2cd08abdb77a060c2f0154076d8304a85833f88",
+      "files": [],
+      "link": "bl_2",
+      "text": "hi",
+      "thread_ts": "10.1"
+    }
+  ],
+  "rate": [
+    {
+      "expected": {
+        "verdict": "allow"
+      },
+      "key": "bl_1:U1",
+      "limit": 3,
+      "now": 1000
+    },
+    {
+      "expected": {
+        "verdict": "allow"
+      },
+      "key": "bl_1:U1",
+      "limit": 3,
+      "now": 1001
+    },
+    {
+      "expected": {
+        "verdict": "allow"
+      },
+      "key": "bl_1:U1",
+      "limit": 3,
+      "now": 1002
+    },
+    {
+      "expected": {
+        "notify": true,
+        "verdict": "drop"
+      },
+      "key": "bl_1:U1",
+      "limit": 3,
+      "now": 1010
+    },
+    {
+      "expected": {
+        "notify": false,
+        "verdict": "drop"
+      },
+      "key": "bl_1:U1",
+      "limit": 3,
+      "now": 1020
+    },
+    {
+      "expected": {
+        "verdict": "allow"
+      },
+      "key": "bl_1:U2",
+      "limit": 3,
+      "now": 1020
+    },
+    {
+      "expected": {
+        "verdict": "allow"
+      },
+      "key": "bl_1:U1",
+      "limit": 3,
+      "now": 4600
+    },
+    {
+      "expected": {
+        "verdict": "allow"
+      },
+      "key": "k",
+      "limit": 1,
+      "now": 0
+    },
+    {
+      "expected": {
+        "notify": true,
+        "verdict": "drop"
+      },
+      "key": "k",
+      "limit": 1,
+      "now": 10
+    },
+    {
+      "expected": {
+        "notify": false,
+        "verdict": "drop"
+      },
+      "key": "k",
+      "limit": 1,
+      "now": 20
+    },
+    {
+      "expected": {
+        "verdict": "allow"
+      },
+      "key": "k",
+      "limit": 1,
+      "now": 3601
+    },
+    {
+      "expected": {
+        "notify": true,
+        "verdict": "drop"
+      },
+      "key": "k",
+      "limit": 1,
+      "now": 3611
+    }
+  ],
+  "recover": [
+    {
+      "due": true,
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "Couldn't confirm Slack received this reply. Check the thread before sending it again",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "unconfirmed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 150,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      }
+    },
+    {
+      "due": true,
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 150,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      }
+    },
+    {
+      "due": true,
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "Not sent within a day. Reply again from the room",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "failed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 86501,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      }
+    },
+    {
+      "due": true,
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 86500,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      }
+    },
+    {
+      "due": false,
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "delivered",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 150,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "delivered",
+        "text": "hi",
+        "thread_ts": "10.1"
+      }
+    },
+    {
+      "due": false,
+      "expected": {
+        "attempts": 3,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "failed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 150,
+      "row": {
+        "attempts": 3,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "failed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      }
+    }
+  ],
+  "retry_delay": [
+    {
+      "attempts": 0,
+      "expected": 5
+    },
+    {
+      "attempts": 1,
+      "expected": 15
+    },
+    {
+      "attempts": 2,
+      "expected": 60
+    },
+    {
+      "attempts": 3,
+      "expected": 300
+    },
+    {
+      "attempts": 4,
+      "expected": 900
+    },
+    {
+      "attempts": 5,
+      "expected": 900
+    },
+    {
+      "attempts": 99,
+      "expected": 900
+    }
+  ],
+  "settle": [
+    {
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "delivered",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 200,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "kind": "delivered"
+      }
+    },
+    {
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "Slack asked us to slow down",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 242,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 200,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "kind": "limited",
+        "seconds": 42
+      }
+    },
+    {
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "Slack asked us to slow down",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 201,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 200,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "kind": "limited",
+        "seconds": 0
+      }
+    },
+    {
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "Slack asked us to slow down",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 3800,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 200,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "kind": "limited",
+        "seconds": 999999
+      }
+    },
+    {
+      "expected": {
+        "attempts": 1,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 205,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 200,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "offline",
+        "kind": "retry"
+      }
+    },
+    {
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "timeout",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "unconfirmed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 200,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "timeout",
+        "kind": "unconfirmed"
+      }
+    },
+    {
+      "expected": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "archived",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": null,
+        "state": "failed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 200,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "archived",
+        "kind": "failed"
+      }
+    },
+    {
+      "expected": {
+        "attempts": 1,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 1005,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 1000,
+      "row": {
+        "attempts": 0,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": null,
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 100,
+        "sent_at": 100,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "offline",
+        "kind": "retry"
+      },
+      "step": 0
+    },
+    {
+      "expected": {
+        "attempts": 2,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 1030,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 1000,
+      "row": {
+        "attempts": 1,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 1005,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "offline",
+        "kind": "retry"
+      },
+      "step": 1
+    },
+    {
+      "expected": {
+        "attempts": 3,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 1120,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 1000,
+      "row": {
+        "attempts": 2,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 1030,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "offline",
+        "kind": "retry"
+      },
+      "step": 2
+    },
+    {
+      "expected": {
+        "attempts": 4,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 1600,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 1000,
+      "row": {
+        "attempts": 3,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 1120,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "offline",
+        "kind": "retry"
+      },
+      "step": 3
+    },
+    {
+      "expected": {
+        "attempts": 5,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 2800,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 1000,
+      "row": {
+        "attempts": 4,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 1600,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "offline",
+        "kind": "retry"
+      },
+      "step": 4
+    },
+    {
+      "expected": {
+        "attempts": 5,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 2800,
+        "sent_at": null,
+        "state": "failed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 1000,
+      "row": {
+        "attempts": 5,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 2800,
+        "sent_at": null,
+        "state": "pending",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "offline",
+        "kind": "retry"
+      },
+      "step": 5
+    },
+    {
+      "expected": {
+        "attempts": 5,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 2800,
+        "sent_at": null,
+        "state": "failed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "now": 1000,
+      "row": {
+        "attempts": 5,
+        "channel": "C1",
+        "created_at": 100,
+        "dedupe": "4d412c5724b9e84778b6aced405ae5cce14bb961cdd53fe1a052f6fdda802c25",
+        "detail": "offline",
+        "files": [],
+        "id": "1",
+        "link_id": "bl_1",
+        "next_at": 2800,
+        "sent_at": null,
+        "state": "failed",
+        "text": "hi",
+        "thread_ts": "10.1"
+      },
+      "sent": {
+        "detail": "offline",
+        "kind": "retry"
+      },
+      "step": 6
+    }
+  ],
+  "skip_reason": [
+    {
+      "allowed_senders": [],
+      "enabled": true,
+      "expected": null,
+      "gate": "all",
+      "mentioned": false,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": true,
+      "expected": null,
+      "gate": "all",
+      "mentioned": true,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": true,
+      "expected": null,
+      "gate": "all",
+      "mentioned": true,
+      "sender": "u2"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": true,
+      "expected": null,
+      "gate": "all",
+      "mentioned": false,
+      "sender": "U2"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": true,
+      "expected": "sender",
+      "gate": "all",
+      "mentioned": false,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": true,
+      "expected": "sender",
+      "gate": "all",
+      "mentioned": true,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": true,
+      "expected": null,
+      "gate": "all",
+      "mentioned": true,
+      "sender": "u2"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": true,
+      "expected": null,
+      "gate": "all",
+      "mentioned": false,
+      "sender": "U2"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "all",
+      "mentioned": false,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "all",
+      "mentioned": true,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "all",
+      "mentioned": true,
+      "sender": "u2"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "all",
+      "mentioned": false,
+      "sender": "U2"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "all",
+      "mentioned": false,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "all",
+      "mentioned": true,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "all",
+      "mentioned": true,
+      "sender": "u2"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "all",
+      "mentioned": false,
+      "sender": "U2"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": true,
+      "expected": "no_mention",
+      "gate": "mentions",
+      "mentioned": false,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": true,
+      "expected": null,
+      "gate": "mentions",
+      "mentioned": true,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": true,
+      "expected": null,
+      "gate": "mentions",
+      "mentioned": true,
+      "sender": "u2"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": true,
+      "expected": "no_mention",
+      "gate": "mentions",
+      "mentioned": false,
+      "sender": "U2"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": true,
+      "expected": "sender",
+      "gate": "mentions",
+      "mentioned": false,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": true,
+      "expected": "sender",
+      "gate": "mentions",
+      "mentioned": true,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": true,
+      "expected": null,
+      "gate": "mentions",
+      "mentioned": true,
+      "sender": "u2"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": true,
+      "expected": "no_mention",
+      "gate": "mentions",
+      "mentioned": false,
+      "sender": "U2"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "mentions",
+      "mentioned": false,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "mentions",
+      "mentioned": true,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "mentions",
+      "mentioned": true,
+      "sender": "u2"
+    },
+    {
+      "allowed_senders": [],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "mentions",
+      "mentioned": false,
+      "sender": "U2"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "mentions",
+      "mentioned": false,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "mentions",
+      "mentioned": true,
+      "sender": "U1"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "mentions",
+      "mentioned": true,
+      "sender": "u2"
+    },
+    {
+      "allowed_senders": [
+        "U2"
+      ],
+      "enabled": false,
+      "expected": "disabled",
+      "gate": "mentions",
+      "mentioned": false,
+      "sender": "U2"
+    }
+  ],
+  "unframe": [
+    {
+      "expected": null,
+      "label": "#feedback-triage",
+      "text": "plain team message"
+    },
+    {
+      "expected": [
+        "Dana",
+        "hi"
+      ],
+      "label": "#feedback-triage",
+      "text": "@triage Slack · Dana in #feedback-triage: hi\n[slack-thread:bl_1:C0FEEDBK1:1.1]"
+    },
+    {
+      "expected": null,
+      "label": "#feedback-triage",
+      "text": "Slack · Dana in #other: hi"
+    },
+    {
+      "expected": null,
+      "label": "#feedback-triage",
+      "text": "@only"
+    },
+    {
+      "expected": [
+        "A",
+        "a\nb"
+      ],
+      "label": "#feedback-triage",
+      "text": "Slack · A in #feedback-triage: a\n[slack-thread:x]\nb"
+    }
+  ]
+}
